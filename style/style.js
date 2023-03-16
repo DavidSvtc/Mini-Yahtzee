@@ -123,9 +123,5 @@ export default StyleSheet.create({
     justifyContent: 'center',
     fontSize: 18,
   },
-  gamevalue: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    paddingBottom: 10,
-  }
+ 
 });
