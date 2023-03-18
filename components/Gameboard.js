@@ -242,25 +242,25 @@ export default Gameboard = ({ route }) => {
         ? "Throw Dices"
         : "New Round"}
     </Button>
-    <Text style={{ fontSize: 20 }}>
+    <Text style={styles.textrest}>
       Number of throws left: {nbrOfThrowsLeft}
     </Text>
-    <Text style={{ fontSize: 15 }}>{status}</Text>
+    <Text style={styles.textrest} >{status}</Text>
     <View style={styles.dicePoints}>
       <Grid>{pointsRow}</Grid>
     </View>
     <View style={styles.dicePoints}>
       <Grid>{buttonsRow}</Grid>
     </View>
-    <Text style={styles.miniHeader}>Total Points: {totalPoints}</Text>
-    <Text >
+    <Text style={styles.pointsaway}>
       {BONUS_POINTS_LIMIT - totalPoints <= 0
         ? "Bonus reached!"
         : `You are ${
             BONUS_POINTS_LIMIT - totalPoints
           } points away from ${BONUS_POINTS} bonus points`}
     </Text>
-    <Text>Player: {playerName}</Text>
+    <Text style={styles.boldtext}>Total Points: {totalPoints}</Text>
+    <Text style={styles.boldtext}>Player: {playerName}</Text>
     <Footer></Footer>
   </View>
   

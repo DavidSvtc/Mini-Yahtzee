@@ -28,7 +28,7 @@ export default Home = ({ navigation }) => {
                 <Text style={styles.basicText}> For Scoreboard enter your name </Text>
                 <TextInput style={styles.textInput} onChangeText={setPlayerName} autoFocus={true} keyboardType="name-phone-pad"> </TextInput>
                 <Pressable style={styles.button} onPress={() => handlePlayerName(playerName)}> 
-                    <Text style={styles.buttonText}> OK </Text>
+                    <Text style={styles.buttonText}> Let's Go </Text>
                 </Pressable>
                 </>
                 :
@@ -44,7 +44,7 @@ export default Home = ({ navigation }) => {
                 <Text style={styles.rulesText}>
                 GOAL: To get points as much as possible. {BONUS_POINTS_LIMIT} points is the limit of getting bonus which gives you {BONUS_POINTS} points more.
                 </Text>
-                <Text style={styles.basicText}> Good luck, {playerName} ! </Text>
+                <Text style={styles.miniHeader}> Good luck, {playerName} ! </Text>
                 <Pressable style={styles.button} onPress={() => navigation.navigate('Gameboard', {player: playerName})}> 
                     <Text style={styles.buttonText}> PLAY </Text>
                 </Pressable>

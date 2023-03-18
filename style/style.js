@@ -59,7 +59,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     padding: 10,
     backgroundColor: "#F08080",
-    width: 200,
+    width: 180,
     borderRadius: 15,
     justifyContent: 'center',
     alignItems: 'center',
@@ -123,5 +123,34 @@ export default StyleSheet.create({
     justifyContent: 'center',
     fontSize: 18,
   },
+
+  smalltext: {
+    marginTop: 15,
+    marginBottom: 15,
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: "center",
+    fontFamily: 'AntonRegular',
+  },
+
+  textrest: {
+    marginTop: 3,
+    marginBottom: 5,
+    fontSize: 17,
+  },
+
+  boldtext: {
+    fontSize: 20,
+    marginTop: 10,
+    fontWeight: 'bold',
+    textAlign: "center",
+    fontFamily: 'AntonRegular',
+  },
+
+  pointsaway: {
+    marginTop:10,
+    marginBottom:5,
+    fontSize: 17
+  }
  
 });
